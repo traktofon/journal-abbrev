@@ -14,6 +14,7 @@ not populated, and I can't be bothered to add it manually.  Additionally,
 different publishers may require different styles of abbreviation.  
 
 There are currently two scripts:
+
 1. **get-abbrev.py** downloads a list of journal abbreviations, currently
    from the [ADS service](http://adsabs.harvard.edu/abs_doc/journals2.html)
    and saves it in a simple text file, which can be edited or amended.
@@ -70,16 +71,17 @@ If additionally the option *-m* or *--minify* is given, the program will
 also remove some fields from the BibTeX entries, i.e. fields which are specific
 to Zotero or which are not needed for citations in science journals.
 Currently the removed fields are:
-- abstract
-- keyword
-- file
-- link
+
+* abstract
+* keyword
+* file
+* link
 
 
 TODO
 ----
 
 The following features may be implemented when the need arises:
+
 * Get abbreviation definitions from other sources.
 * Fuzzily match journal names from BibTeX with those from the definitions.
-
