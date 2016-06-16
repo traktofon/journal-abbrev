@@ -1,0 +1,4 @@
+syntax: glob
+
+abbrev.txt
+*.swp
