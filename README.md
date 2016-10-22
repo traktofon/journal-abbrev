@@ -84,4 +84,6 @@ TODO
 The following features may be implemented when the need arises:
 
 * Get abbreviation definitions from other sources.
-* Fuzzily match journal names from BibTeX with those from the definitions.
+  [This](http://images.webofknowledge.com/WOK46/help/WOS/0-9_abrvjt.html) or
+  [this](http://www.efm.leeds.ac.uk/~mark/ISIabbr/N_abrvjt.html) are candidates.
+* More fuzzily match journal names from BibTeX with those from the definitions.

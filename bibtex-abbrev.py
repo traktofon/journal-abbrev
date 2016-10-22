@@ -2,12 +2,15 @@
 
 import bibtexparser as bp
 import argparse
+import re
 
 
 def fix_journal(j):
     "Attempt to canonicalize the journal name."
+    j = j.lower()
     j = j.replace("," , ""   )
     j = j.replace("\&", "and")
+    j = re.sub(" *the *", " ", j).strip()
     return j
 
 
@@ -27,6 +30,7 @@ def parse_abbrev(fnam):
         if eqpos<0: continue # ignore lines without =
         abbrev = al[:eqpos].strip()
         journal = al[eqpos+1:].strip()
+        journal = fix_journal(journal)
         abbdb[journal] = abbrev
     return abbdb
 
